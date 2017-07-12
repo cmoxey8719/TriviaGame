@@ -1,0 +1,18 @@
+body{
+	background-image: url(../images/golfcourse.jpg);
+}
+
+.title{
+	background-color: white;
+	color: blue;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+.questions{
+	background-color: white;
+	color: blue;
+	line-height: 28px;
+	opacity: 0.7
+}

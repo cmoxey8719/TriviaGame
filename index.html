@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!-- title -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div class="col-md-6 title">
+			<h1>Trivia of Golf</h1>
+		</div>
+		<div class="col-md-3">
+			
+		</div>
+	</div>
+</div>
+<!-- start button -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div class="col-md-6">
+			<div class="col-md-5"></div>
+			<div class="col-md-6">
+				<br><br>
+				<button id="begin">START</button>
+				Time Left:<div class="timer "></div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			
+		</div>
+	</div>
+</div>
+<!-- trivia game results -->
+
+<!-- trivia game questions -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div id="questions" class="col-md-6">
+			
+			<p>1. What is the lowest 72-hole stroke total on the PGA Tour?</p>
+				<input type="radio" name="queston1" value="wrong">252 
+				<input type="radio" name="queston1" value="right">253 
+				<input type="radio" name="queston1" value="wrong">254 
+				<input type="radio" name="queston1" value="wrong">255
+				<br><br>
+
+			<p>2. What is the worst single hole score?</p>
+				<input type="radio" name="question2" value="wrong">8
+				<input type="radio" name="question2" value="wrong">12 
+				<input type="radio" name="question2" value="right">23 
+				<input type="radio" name="question2" value="wrong">30
+				<br><br>
+
+			<p>3. What is the most career wins on the PGA Tour?</p>
+				<input type="radio" name="question3" value="wrong">64
+				<input type="radio" name="question3" value="wrong">73
+				<input type="radio" name="question3" value="right">79 
+				<input type="radio" name="question3" value="wrong">82
+				<br><br>
+
+			<p>4. Where is the hole located?</p>
+				<input type="radio" name="question4" value="wrong">rough
+				<input type="radio" name="question4" value="wrong">fairway 
+				<input type="radio" name="question4" value="right">green
+				<input type="radio" name="question4" value="wrong">bunker
+				<br><br>
+
+			<p>5. What 2 drinks when mixed make up an Arnold Palmer?</p>
+				<input type="radio" name="question5" value="wrong">coke/lemonade
+				<input type="radio" name="question5" value="right">ice tea/lemonade 
+				<input type="radio" name="question5" value="wrong">gatorade/lemonade 
+				<input type="radio" name="question5" value="wrong">fruit punch/ice tea
+				<br><br>
+
+			<p>6. What course is the Masters always played at?</p>
+				<input type="radio" name="question6" value="right">Augusta National 
+				<input type="radio" name="question6" value="wrong">Pebble Beach
+				<input type="radio" name="question6" value="wrong">Erin Hills
+				<input type="radio" name="question6" value="wrong">St. Andrews
+				6<br><br>			
+
+			<p>7. How many clubs are allowed in a golf bag?</p>
+				<input type="radio" name="question7" value="12">12
+				<input type="radio" name="question7" value="13">13 
+				<input type="radio" name="question7" value="14">14 
+				<input type="radio" name="question7" value="15">15
+				<br><br>
+					
+		</div>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="assets/javascript/app.js">
+	
+	start: function() {
+    timer = setInterval(game.countdown, 1000);
+    $(‘#subwrapper’).prepend(‘<h2>Time Remaining: <span id=“counter-number”>120</span> Seconds</h2>‘);
+    $(‘#start’).remove();
+
+
+
+
+
+//submit button click
+$("end").click(){
+
+	//stops timer
+
+	//reveals amount of correct, incorrect and not answered
+
+	//reveals button to restart
+}
+
+
+</script>
+</body>
+</html>
